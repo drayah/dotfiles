@@ -30,6 +30,7 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Monokai Dark Soda",
     "workbench.iconTheme": "vscode-icons",
+    "diffEditor.renderSideBySide": false,
     
     // language specific settings
     "[clojure]": {
