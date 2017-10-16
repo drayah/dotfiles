@@ -6,9 +6,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'othree/html5.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-scripts/searchfold.vim'
 Plug 'luochen1990/rainbow'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 syntax on
