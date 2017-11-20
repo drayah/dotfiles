@@ -7,10 +7,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'othree/html5.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-scripts/searchfold.vim'
 Plug 'luochen1990/rainbow'
 Plug 'vim-syntastic/syntastic'
+Plug 'ervandew/supertab'
+Plug 'archseer/colibri.vim'
+Plug 'badacadabra/vim-archery'
+Plug 'dim13/smyck.vim'
+Plug 'beigebrucewayne/hacked_ayu.vim'
+Plug 'yuttie/hydrangea-vim'
+Plug 'baines/vim-colorscheme-thaumaturge'
 call plug#end()
 
 syntax on
@@ -18,12 +26,13 @@ filetype plugin indent on
 
 set nocompatible
 set termguicolors
+set background=dark
 
 " backspace
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme atom-dark-256
+colorscheme hacked_ayu
 
 " break lines on word barriers
 set linebreak
