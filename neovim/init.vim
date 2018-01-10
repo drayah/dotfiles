@@ -8,6 +8,7 @@ Plug 'othree/html5.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fireplace'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-scripts/searchfold.vim'
 Plug 'luochen1990/rainbow'
@@ -19,6 +20,7 @@ Plug 'dim13/smyck.vim'
 Plug 'beigebrucewayne/hacked_ayu.vim'
 Plug 'yuttie/hydrangea-vim'
 Plug 'baines/vim-colorscheme-thaumaturge'
+Plug 'snoe/nvim-parinfer.js'
 call plug#end()
 
 syntax on
