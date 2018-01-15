@@ -97,3 +97,6 @@ let g:rainbow_conf = {
 \   '#dda0dd'
 \ ]
 \}
+
+" map ctrl-p
+nnoremap <C-P> :FZF<Enter>
