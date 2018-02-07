@@ -41,6 +41,7 @@ set linebreak
 
 " show line numbers
 set number
+set relativenumber
 
 " dont wrap lines
 set nowrap
