@@ -7,7 +7,7 @@ filetype plugin indent on
 " backspace
 set backspace=indent,eol,start
 
-" enable colorscheme in terminal 
+" enable colorscheme in terminal
 set term=xterm-256color
 colorscheme molokai
 
