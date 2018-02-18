@@ -102,6 +102,9 @@ let g:rainbow_conf = {
 \ ]
 \}
 
+" highlight inline handlebars
+autocmd BufRead,BufNewFile *.js HighlightInlineHbs
+
 " make fzf use the silver searcher
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
