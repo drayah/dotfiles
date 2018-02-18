@@ -22,6 +22,8 @@ Plug 'yuttie/hydrangea-vim'
 Plug 'baines/vim-colorscheme-thaumaturge'
 Plug 'snoe/nvim-parinfer.js'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'dustinfarris/vim-htmlbars-inline-syntax'
 call plug#end()
 
 syntax on
