@@ -24,6 +24,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'dustinfarris/vim-htmlbars-inline-syntax'
 Plug 'eraserhd/parinfer-rust'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 syntax on
