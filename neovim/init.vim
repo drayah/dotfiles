@@ -25,6 +25,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'dustinfarris/vim-htmlbars-inline-syntax'
 Plug 'eraserhd/parinfer-rust'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'gcmt/taboo.vim'
 call plug#end()
 
 syntax on
