@@ -17,7 +17,6 @@ Plug 'ervandew/supertab'
 Plug 'archseer/colibri.vim'
 Plug 'badacadabra/vim-archery'
 Plug 'dim13/smyck.vim'
-Plug 'beigebrucewayne/hacked_ayu.vim'
 Plug 'yuttie/hydrangea-vim'
 Plug 'baines/vim-colorscheme-thaumaturge'
 Plug 'ntpeters/vim-better-whitespace'
@@ -39,7 +38,7 @@ set background=dark
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme hacked_ayu
+colorscheme thaumaturge
 
 " break lines on word barriers
 set linebreak
