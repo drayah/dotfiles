@@ -112,3 +112,6 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " map ctrl-p
 nnoremap <C-P> :FZF<Enter>
+
+" insert mode map jk to esc
+imap jk <Esc>
