@@ -86,9 +86,6 @@ set splitbelow
 " vim-airline powerline fonts
 let g:airline_powerline_fonts = 1
 
-" vim-indent-guides config, skinny guides
-let g:indent_guides_guide_size = 1
-
 " rainbow parens disabled by default
 let g:rainbow_active = 1
 
