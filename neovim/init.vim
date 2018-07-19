@@ -23,6 +23,8 @@ Plug 'baines/vim-colorscheme-thaumaturge'
 Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'HenryNewcomer/vim-theme-papaya'
+Plug 'Jimeno0/vim-chito'
+Plug 'kaicataldo/material.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'dustinfarris/vim-htmlbars-inline-syntax'
@@ -42,7 +44,7 @@ set background=dark
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme thaumaturge
+colorscheme chito
 
 " break lines on word barriers
 set linebreak
