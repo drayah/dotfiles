@@ -91,7 +91,7 @@ set splitbelow
 " vim-airline powerline fonts
 let g:airline_powerline_fonts = 1
 
-" rainbow parens disabled by default
+" rainbow parens enabled by default
 let g:rainbow_active = 1
 
 " rainbow colors
