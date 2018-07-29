@@ -10,6 +10,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fireplace'
 Plug 'humorless/vim-kibit'
+Plug 'venantius/vim-eastwood'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-scripts/searchfold.vim'
 Plug 'luochen1990/rainbow'
@@ -105,6 +106,9 @@ let g:rainbow_conf = {
 \   '#dda0dd'
 \ ]
 \}
+
+" syntastic
+let g:syntastic_clojure_checkers = ['eastwood']
 
 " highlight inline handlebars
 autocmd BufRead,BufNewFile *.js HighlightInlineHbs
