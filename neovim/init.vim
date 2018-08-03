@@ -112,8 +112,11 @@ let g:rainbow_conf = {
 " syntastic
 let g:syntastic_clojure_checkers = ['eastwood']
 
-" highlight inline handlebars
+" javascript:
+" - highlight inline handlebars
+" - run neoformat on save
 autocmd BufRead,BufNewFile *.js HighlightInlineHbs
+autocmd BufWritePre *.js Neoformat
 
 " make fzf use the silver searcher
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
