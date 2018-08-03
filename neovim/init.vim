@@ -33,6 +33,7 @@ Plug 'eraserhd/parinfer-rust'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'gcmt/taboo.vim'
 Plug 'RRethy/vim-illuminate'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 syntax on
