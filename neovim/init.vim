@@ -32,6 +32,7 @@ Plug 'dustinfarris/vim-htmlbars-inline-syntax'
 Plug 'eraserhd/parinfer-rust'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'gcmt/taboo.vim'
+Plug 'RRethy/vim-illuminate'
 call plug#end()
 
 syntax on
