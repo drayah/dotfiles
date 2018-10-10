@@ -157,6 +157,8 @@
 (add-to-list 'default-frame-alist
              '(ns-appearance . dark)) ;; or dark - depending on your theme
 
+(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 
 (require 'doom-themes)
