@@ -160,7 +160,6 @@
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
-
 (require 'doom-themes)
 
 (load-theme 'doom-peacock t)
