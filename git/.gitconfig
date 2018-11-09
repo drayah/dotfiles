@@ -1,0 +1,15 @@
+[user]
+	name = Giovanni Martina
+	email = drayah@gmail.com
+[alias]
+    co = checkout
+    st = status
+    br = branch
+[mergetool]
+	keepBackup = true
+[color]
+	ui = true
+[push]
+	default = simple
+[core]
+	editor = /usr/local/bin/nvim
