@@ -89,7 +89,7 @@
       ;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
       ;ess               ; emacs speaks statistics
-       go                ; the hipster dialect
+      ;go                ; the hipster dialect
       ;(haskell +intero) ; a language that's lazier than I am
       ;hy                ; readability of scheme w/ speed of python
       ;(java +meghanada) ; the poster child for carpal tunnel syndrome
@@ -165,3 +165,7 @@
 (load-theme 'doom-peacock t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
+
+;; config fonts
+(setq doom-font (font-spec :family "Hack" :size 12)
+      doom-big-font (font-spec :family "Hack" :size 16))
