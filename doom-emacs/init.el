@@ -167,8 +167,8 @@
 (doom-themes-org-config)
 
 ;; config fonts
-(setq doom-font (font-spec :family "Hack" :size 12)
-      doom-big-font (font-spec :family "Hack" :size 14))
+(setq doom-font (font-spec :family "Hack" :size 14)
+      doom-big-font (font-spec :family "Hack" :size 16))
 
 ;; relative line numbers
 (setq display-line-numbers-type 'relative)
