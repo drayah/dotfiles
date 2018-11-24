@@ -151,14 +151,14 @@
        ;; your own modules.
        (default +bindings +snippets +evil-commands))
 
+;; macos titlebar
 (add-to-list 'default-frame-alist
              '(ns-transparent-titlebar . t))
 
 (add-to-list 'default-frame-alist
              '(ns-appearance . dark)) ;; or dark - depending on your theme
 
-(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
-
+;; color theme
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
@@ -166,9 +166,28 @@
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
-;; config fonts
-(setq doom-font (font-spec :family "Hack" :size 14)
+;; fonts
+(setq doom-font (font-spec :family "Hack" :size 12)
       doom-big-font (font-spec :family "Hack" :size 16))
 
 ;; relative line numbers
 (setq display-line-numbers-type 'relative)
+
+;; prettify symbols
+(global-prettify-symbols-mode 1)
+
+;; clojure
+(use-package clojure-mode
+  :config
+  (progn
+    (define-clojure-indent
+      (fact 'defun)
+      (facts 'defun)
+      (fact-group 'defun)
+      (silent-fact 'defun)
+      (future-fact 'defun)
+      (tabular 'defun)
+      (against-background 'defun)
+      (provided 0))))
+
+(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
