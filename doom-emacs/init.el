@@ -176,6 +176,9 @@
 ;; prettify symbols
 (global-prettify-symbols-mode 1)
 
+;; custom bindings
+(global-set-key (kbd "C-c r") 'helm-projectile-ag)
+
 ;; clojure
 (use-package clojure-mode
   :config
