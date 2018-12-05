@@ -179,6 +179,11 @@
 ;; custom bindings
 (global-set-key (kbd "C-c r") 'helm-projectile-ag)
 
+;; indent guides
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+(setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-responsive "top")
+
 ;; clojure
 (use-package clojure-mode
   :config
