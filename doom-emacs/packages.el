@@ -8,4 +8,3 @@
 
 (package! highlight-indentation :disable t)
 (package! highlight-indent-guides)
-(package! emidje)
