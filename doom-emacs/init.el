@@ -199,3 +199,4 @@
       (provided 0))))
 
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+(setq parinfer-auto-switch-indent-mode t)
