@@ -184,6 +184,10 @@
 (setq highlight-indent-guides-method 'character)
 (setq highlight-indent-guides-responsive "top")
 
+;; highlight
+(add-hook 'prog-mode-hook 'highlight-thing-mode)
+(custom-set-faces `(highlight-thing ((t (:foreground "#ca73d6" :background "#583d5b")))))
+
 ;; clojure
 (use-package clojure-mode
   :config
