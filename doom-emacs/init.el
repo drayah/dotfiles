@@ -162,7 +162,7 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
-(load-theme 'doom-dracula t)
+(load-theme 'doom-one t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
