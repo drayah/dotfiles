@@ -41,6 +41,8 @@
 
 ;; helm
 (setq helm-M-x-fuzzy-match t)
+(require 'helm-projectile)
+(helm-projectile-on)
 
 ;; helm-flx
 (helm-flx-mode +1)
