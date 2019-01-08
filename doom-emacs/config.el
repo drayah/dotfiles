@@ -67,3 +67,6 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (setq parinfer-auto-switch-indent-mode t)
+
+;; cider
+(setq cider-show-error-buffer nil)
