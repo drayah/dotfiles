@@ -66,6 +66,11 @@
       (provided 0))))
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(setq parinfer-extensions '(defaults
+                            smart-tab
+                            smart-yank
+                            ;pretty-parens
+                            evil))
 (setq parinfer-auto-switch-indent-mode t)
 
 ;; cider
