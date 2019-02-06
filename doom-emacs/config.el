@@ -39,14 +39,6 @@
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
 (custom-set-faces `(highlight-thing ((t (:foreground "#ca73d6" :background "#583d5b")))))
 
-;; helm
-(setq helm-M-x-fuzzy-match t)
-(require 'helm-projectile)
-(helm-projectile-on)
-
-;; helm-flx
-(helm-flx-mode +1)
-
 ;; helm-fuzzier
 (require 'helm-fuzzier)
 (helm-fuzzier-mode 1)
