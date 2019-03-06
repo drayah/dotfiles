@@ -28,7 +28,7 @@
 (global-prettify-symbols-mode 1)
 
 ;; custom bindings
-(global-set-key (kbd "C-c r") 'helm-projectile-ag)
+(global-set-key (kbd "C-c r") 'counsel-projectile-ag)
 
 ;; indent guides
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
@@ -38,10 +38,6 @@
 ;; highlight
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
 (custom-set-faces `(highlight-thing ((t (:foreground "#ca73d6" :background "#583d5b")))))
-
-;; helm-fuzzier
-(require 'helm-fuzzier)
-(helm-fuzzier-mode 1)
 
 ;; clojure
 (use-package clojure-mode
