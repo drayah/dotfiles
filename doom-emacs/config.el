@@ -62,4 +62,6 @@
 (setq parinfer-auto-switch-indent-mode t)
 
 ;; cider
+(require 'cider)
+(require 'cider-find)
 (setq cider-show-error-buffer nil)
