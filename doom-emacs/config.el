@@ -1,7 +1,6 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-
 ;; macos titlebar
 (add-to-list 'default-frame-alist
              '(ns-transparent-titlebar . t))
@@ -20,6 +19,10 @@
 ;; fonts
 (setq doom-font (font-spec :family "Hack" :size 14)
       doom-big-font (font-spec :family "Hack" :size 16))
+
+;; indent
+(setq-default evil-shift-width 2
+              tab-width 2)
 
 ;; relative line numbers
 (setq display-line-numbers-type 'relative)
@@ -62,6 +65,12 @@
 (setq parinfer-auto-switch-indent-mode t)
 
 ;; cider
-(require 'cider)
-(require 'cider-find)
+;(require 'cider)
+;(require 'cider-find)
 (setq cider-show-error-buffer nil)
+
+;; web
+(after! web-mode
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
