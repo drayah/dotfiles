@@ -12,7 +12,7 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
-(load-theme 'doom-vibrant t)
+(load-theme 'doom-solarized-light t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
@@ -38,9 +38,18 @@
 (setq highlight-indent-guides-method 'character)
 (setq highlight-indent-guides-responsive "top")
 
-;; highlight
+;; highlight-thing
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
-(custom-set-faces `(highlight-thing ((t (:foreground "#ca73d6" :background "#583d5b")))))
+
+;; highlight face attributes - doom-vibrant
+;(after! highlight-thing
+;  (set-face-attribute 'highlight-thing nil :foreground "#ca73d6")
+;  (set-face-attribute 'highlight-thing nil :background "#583d5b"))
+
+;; highlight face attributes - doom-solarized-light
+(after! highlight-thing
+  (set-face-attribute 'highlight-thing nil :foreground "#897105")
+  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
 
 ;; clojure
 (use-package clojure-mode
