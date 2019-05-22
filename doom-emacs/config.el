@@ -32,6 +32,7 @@
 
 ;; custom bindings
 (global-set-key (kbd "C-c r") 'counsel-projectile-ag)
+(setq ns-right-alternate-modifier 'none)
 
 ;; indent guides
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
