@@ -63,6 +63,7 @@
       (silent-fact 'defun)
       (future-fact 'defun)
       (tabular 'defun)
+      (defstep 'defun)
       (against-background 'defun)
       (provided 0))))
 
