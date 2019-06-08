@@ -65,6 +65,8 @@
       (tabular 'defun)
       (defstep 'defun)
       (against-background 'defun)
+      (quick-check 'defun)
+      (for-all 'defun)
       (provided 0))))
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
