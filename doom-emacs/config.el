@@ -95,9 +95,9 @@
 (setq parinfer-extensions '(defaults
                             smart-tab
                             smart-yank
+                            paredit
                             ;pretty-parens
                             evil))
-(setq parinfer-auto-switch-indent-mode t)
 
 ;; cider
 (setq cider-show-error-buffer nil)
