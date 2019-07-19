@@ -96,7 +96,7 @@
                             smart-tab
                             smart-yank
                             paredit
-                            ;pretty-parens
+                            pretty-parens
                             evil))
 
 ;; cider
