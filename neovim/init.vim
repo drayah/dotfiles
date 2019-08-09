@@ -49,6 +49,9 @@ set backspace=indent,eol,start
 " enable colorscheme in terminal
 colorscheme chito
 
+" make sure the background is transparent
+hi! Normal ctermbg=NONE guibg=NONE
+
 " break lines on word barriers
 set linebreak
 
