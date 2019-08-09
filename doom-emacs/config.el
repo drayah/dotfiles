@@ -74,23 +74,6 @@
       (for-all 'defun)
       (provided 0))))
 
-;; lsp-mode for clojure
-(use-package lsp-mode
-  :commands lsp
-  :config
-  (add-to-list 'lsp-language-id-configuration '(clojure-mode . "clojure-mode"))
-  :init
-  (setq lsp-enable-indentation nil)
-  (add-hook 'clojure-mode-hook #'lsp)
-  (add-hook 'clojurec-mode-hook #'lsp)
-  (add-hook 'clojurescript-mode-hook #'lsp))
-
-(use-package lsp-ui
-  :commands lsp-ui-mode)
-
-(use-package company-lsp
-  :commands company-lsp)
-
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (setq parinfer-extensions '(defaults
                             smart-tab
