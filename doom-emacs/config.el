@@ -12,7 +12,7 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
-(load-theme 'doom-sourcerer t)
+(load-theme 'doom-solarized-light t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
@@ -48,14 +48,14 @@
 ;  (set-face-attribute 'highlight-thing nil :background "#583d5b"))
 
 ;; highlight face attributes - doom-solarized-light
-;(after! highlight-thing
-;  (set-face-attribute 'highlight-thing nil :foreground "#897105")
-;  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
+(after! highlight-thing
+  (set-face-attribute 'highlight-thing nil :foreground "#897105")
+  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
 
 ;; highlight face attributes - doom-sourcerer
-(after! highlight-thing
-  (set-face-attribute 'highlight-thing nil :foreground "#a9d1cc")
-  (set-face-attribute 'highlight-thing nil :background "#36635d"))
+;(after! highlight-thing
+;  (set-face-attribute 'highlight-thing nil :foreground "#a9d1cc")
+;  (set-face-attribute 'highlight-thing nil :background "#36635d"))
 
 ;; clojure
 (use-package clojure-mode
@@ -68,6 +68,7 @@
       (silent-fact 'defun)
       (future-fact 'defun)
       (tabular 'defun)
+      (testing 'defun)
       (defstep 'defun)
       (against-background 'defun)
       (quick-check 'defun)
