@@ -2,11 +2,8 @@
 
 ;; Place your private configuration here
 ;; macos titlebar
-(add-to-list 'default-frame-alist
-             '(ns-transparent-titlebar . t))
-
-(add-to-list 'default-frame-alist
-             '(ns-appearance . dark)) ;; or dark - depending on your theme
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . light)) ;; or dark - depending on your theme
 
 ;; color theme
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
