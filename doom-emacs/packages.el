@@ -7,3 +7,4 @@
 ;; (package! builtin-package :disable t)
 
 (package! highlight-thing)
+(package! ensime :recipe (:branch "2.0"))
