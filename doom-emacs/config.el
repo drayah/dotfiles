@@ -92,3 +92,6 @@
 ;; plantuml
 (after! plantuml-mode
   (setq plantuml-default-exec-mode 'jar))
+
+;; personal helper functions
+(require 'extras "~/.doom.d/extras.el")
