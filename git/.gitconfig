@@ -1,10 +1,6 @@
 [user]
 	name = Giovanni Martina
-	email = drayah@gmail.com
-[alias]
-    co = checkout
-    st = status
-    br = branch
+  email = 1324915+drayah@users.noreply.github.com
 [mergetool]
 	keepBackup = true
 [color]
