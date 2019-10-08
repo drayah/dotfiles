@@ -55,7 +55,7 @@
 ;  (set-face-attribute 'highlight-thing nil :background "#36635d"))
 
 ;; clojure
-(use-package clojure-mode
+(def-package! clojure-mode
   :config
   (progn
     (define-clojure-indent
@@ -71,6 +71,9 @@
       (quick-check 'defun)
       (for-all 'defun)
       (provided 0))))
+
+(after! clojure-mode
+  (require 'flycheck-clj-kondo))
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (setq parinfer-extensions '(defaults
