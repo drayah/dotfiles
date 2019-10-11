@@ -134,7 +134,6 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        web               ; the tubes
-       ;;vala              ; GObjective-C
 
        :email
        ;;(mu4e +gmail)       ; WIP
