@@ -55,7 +55,7 @@
 ;  (set-face-attribute 'highlight-thing nil :background "#36635d"))
 
 ;; clojure
-(def-package! clojure-mode
+(use-package! clojure-mode
   :config
   (progn
     (define-clojure-indent
