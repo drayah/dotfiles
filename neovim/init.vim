@@ -56,7 +56,6 @@ hi! Normal ctermbg=NONE guibg=NONE
 set linebreak
 
 " show line numbers
-set number
 set relativenumber
 
 " dont wrap lines
