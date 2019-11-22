@@ -112,8 +112,10 @@ let g:rainbow_conf = {
 \ ]
 \}
 
-" syntastic
-let g:syntastic_clojure_checkers = ['eastwood']
+" configure syntastic
+let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_scala_checkers = []
 
 " javascript:
 " - highlight inline handlebars
