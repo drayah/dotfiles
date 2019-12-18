@@ -29,7 +29,7 @@
 (global-prettify-symbols-mode 1)
 
 ;; custom bindings
-(global-set-key (kbd "C-c r") 'counsel-projectile-ag)
+(global-set-key (kbd "C-c r") 'counsel-projectile-git-grep)
 (setq ns-right-alternate-modifier 'none)
 
 ;; indent guides
