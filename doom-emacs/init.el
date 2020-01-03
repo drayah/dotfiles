@@ -67,7 +67,7 @@
        ;;docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
-       eval              ; run code, run (also, repls)
+       (eval +overlay)     ; run code, run (also, repls)
        flycheck          ; tasing you for every semicolon you forget
        ;;flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
@@ -117,9 +117,7 @@
        ;;ocaml             ; an objective camel
        (org              ; organize your plain life in plain text
         +dragndrop       ; file drag & drop support
-        +ipython         ; ipython support for babel
         +pandoc          ; pandoc integration into org's exporter
-        ;+pomodoro        ; be fruitful with the tomato technique
         +present)        ; using Emacs for presentations
        ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
