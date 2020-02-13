@@ -94,7 +94,8 @@
 
 ;; plantuml
 (after! plantuml-mode
-  (setq plantuml-default-exec-mode 'jar))
+  (setq plantuml-default-exec-mode 'jar)
+  (setq plantuml-output-type "png"))
 
 ;; personal helper functions
 (require 'extras "~/.doom.d/extras.el")
