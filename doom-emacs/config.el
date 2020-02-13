@@ -75,6 +75,9 @@
 (after! clojure-mode
   (require 'flycheck-clj-kondo))
 
+;; lsp-mode for clojure
+(add-hook 'clojure-mode-local-vars-hook #'lsp!)
+
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (setq parinfer-extensions '(defaults
                             smart-tab
