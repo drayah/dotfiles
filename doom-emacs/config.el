@@ -75,6 +75,10 @@
 (after! clojure-mode
   (require 'flycheck-clj-kondo))
 
+;; enable both lsp and clj-kondo flycheck checkers
+(after! lsp-mode
+  (flycheck-add-next-checker 'lsp 'clj-kondo-clj))
+
 ;; lsp-mode for clojure
 (add-hook 'clojure-mode-local-vars-hook #'lsp!)
 
