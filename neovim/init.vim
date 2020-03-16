@@ -26,6 +26,7 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'HenryNewcomer/vim-theme-papaya'
 Plug 'Jimeno0/vim-chito'
 Plug 'kaicataldo/material.vim'
+Plug 'victorze/foo'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'dustinfarris/vim-htmlbars-inline-syntax'
@@ -41,16 +42,16 @@ filetype plugin indent on
 
 set nocompatible
 set termguicolors
-set background=dark
+set background=light
 
 " backspace
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme chito
+colorscheme github
 
 " make sure the background is transparent
-hi! Normal ctermbg=NONE guibg=NONE
+" hi! Normal ctermbg=NONE guibg=NONE
 
 " break lines on word barriers
 set linebreak
