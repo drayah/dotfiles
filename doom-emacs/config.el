@@ -3,14 +3,14 @@
 ;; Place your private configuration here
 ;; macos titlebar
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-(add-to-list 'default-frame-alist '(ns-appearance . light)) ;; or dark - depending on your theme
+(add-to-list 'default-frame-alist '(ns-appearance . dark)) ;; or dark - depending on your theme
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; color theme
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
-(load-theme 'doom-one-light t)
+(load-theme 'doom-monokai-spectrum t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
@@ -45,14 +45,14 @@
 ;  (set-face-attribute 'highlight-thing nil :background "#583d5b"))
 
 ;; highlight face attributes - doom-solarized-light
-(after! highlight-thing
-  (set-face-attribute 'highlight-thing nil :foreground "#897105")
-  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
+;(after! highlight-thing
+;  (set-face-attribute 'highlight-thing nil :foreground "#897105")
+;  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
 
 ;; highlight face attributes - doom-sourcerer
-;(after! highlight-thing
-;  (set-face-attribute 'highlight-thing nil :foreground "#a9d1cc")
-;  (set-face-attribute 'highlight-thing nil :background "#36635d"))
+(after! highlight-thing
+  (set-face-attribute 'highlight-thing nil :foreground "#a9d1cc")
+  (set-face-attribute 'highlight-thing nil :background "#36635d"))
 
 ;; clojure
 (use-package! clojure-mode
