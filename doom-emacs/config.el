@@ -31,11 +31,6 @@
 ;; custom bindings
 (setq ns-right-alternate-modifier 'none)
 
-;; indent guides
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(setq highlight-indent-guides-method 'character)
-(setq highlight-indent-guides-responsive "top")
-
 ;; highlight-thing
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
 
@@ -72,7 +67,8 @@
       (for-all 'defun)
       (provided 0))))
 
-;; enable both lsp and clj-kondo flycheck checkers
+;; lsp
+(setq lsp-keymap-prefix "C-c l")
 (after! lsp-mode
   (flycheck-add-next-checker 'lsp 'clj-kondo-clj))
 
