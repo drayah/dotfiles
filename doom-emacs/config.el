@@ -15,8 +15,8 @@
 (doom-themes-org-config)
 
 ;; fonts
-(setq doom-font (font-spec :family "Hack" :size 14)
-      doom-big-font (font-spec :family "Hack" :size 16))
+(setq doom-font (font-spec :family "SF Mono" :size 13)
+      doom-big-font (font-spec :family "SF Mono" :size 16))
 
 ;; indent
 (setq-default evil-shift-width 2
