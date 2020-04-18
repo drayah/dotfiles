@@ -7,5 +7,4 @@
 ;; (package! builtin-package :disable t)
 
 (package! highlight-thing)
-(package! flycheck-clj-kondo)
 (package! adoc-mode)
