@@ -15,7 +15,7 @@
 (doom-themes-org-config)
 
 ;; fonts
-(setq doom-font (font-spec :family "SFMono Nerd Font" :size 13)
+(setq doom-font (font-spec :family "SFMono Nerd Font" :size 14)
       doom-big-font (font-spec :family "SFMono Nerd Font" :size 16))
 
 ;; indent
