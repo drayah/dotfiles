@@ -25,11 +25,18 @@
 ;; relative line numbers
 (setq display-line-numbers-type 'relative)
 
+;; don't confirm on exit
+(setq confirm-kill-emacs nil)
+
+;; don't interpret right option key
+(setq ns-right-alternate-modifier 'none)
+
 ;; prettify symbols
 (global-prettify-symbols-mode 1)
 
-;; custom bindings
-(setq ns-right-alternate-modifier 'none)
+;; add modes for other extensions
+(add-to-list 'auto-mode-alist '("\\.adoc\\'" . adoc-mode))
+(add-to-list 'auto-mode-alist '("\\.repl\\'" . clojure-mode))
 
 ;; highlight-thing
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
