@@ -75,7 +75,6 @@
       (provided 0))))
 
 ;; lsp
-(setq lsp-keymap-prefix "C-c l")
 (after! lsp-mode
   (flycheck-add-next-checker 'lsp 'clj-kondo-clj))
 
