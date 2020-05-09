@@ -3,14 +3,17 @@
 ;; Place your private configuration here
 ;; macos titlebar
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-(add-to-list 'default-frame-alist '(ns-appearance . dark)) ;; or dark - depending on your theme
+(add-to-list 'default-frame-alist '(ns-appearance . light)) ;; or dark - depending on your theme
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; color theme
 (add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
 (require 'doom-themes)
 
-(load-theme 'doom-monokai-spectrum t)
+;; personal helper functions
+(require 'extras "~/.doom.d/extras.el")
+
+(load-theme 'doom-one-light t)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
@@ -41,20 +44,20 @@
 ;; highlight-thing
 (add-hook 'prog-mode-hook 'highlight-thing-mode)
 
-;; highlight face attributes - doom-vibrant
-;(after! highlight-thing
-;  (set-face-attribute 'highlight-thing nil :foreground "#ca73d6")
-;  (set-face-attribute 'highlight-thing nil :background "#583d5b"))
+;; highlight-thing colors (foreground background)
+(setq highlight-thing-colors
+  '(("#ca73d6" "#583d5b")   ;;vibrant
+    ("#a9d1cc" "#36635d")   ;;sourcerer
+    ("#897105" "#f7e9ad"))) ;;solarized
 
-;; highlight face attributes - doom-solarized-light
-;(after! highlight-thing
-;  (set-face-attribute 'highlight-thing nil :foreground "#897105")
-;  (set-face-attribute 'highlight-thing nil :background "#f7e9ad"))
+(setq highlight-thing-active-color 2)
 
-;; highlight face attributes - doom-sourcerer
 (after! highlight-thing
-  (set-face-attribute 'highlight-thing nil :foreground "#a9d1cc")
-  (set-face-attribute 'highlight-thing nil :background "#36635d"))
+  (let* ((color (nth highlight-thing-active-color highlight-thing-colors))
+         (foreground (car color))
+         (background (car (last color))))
+    (set-face-attribute 'highlight-thing nil :foreground foreground)
+    (set-face-attribute 'highlight-thing nil :background background)))
 
 ;; clojure
 (use-package! clojure-mode
@@ -99,6 +102,3 @@
 (after! plantuml-mode
   (setq plantuml-default-exec-mode 'jar)
   (setq plantuml-output-type "png"))
-
-;; personal helper functions
-(require 'extras "~/.doom.d/extras.el")
