@@ -6,10 +6,6 @@
 (add-to-list 'default-frame-alist '(ns-appearance . light)) ;; or dark - depending on your theme
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; color theme
-(add-to-list 'load-path "~/.emacs.d/emacs-doom-themes")
-(require 'doom-themes)
-
 ;; personal helper functions
 (require 'extras "~/.doom.d/extras.el")
 
