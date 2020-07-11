@@ -118,11 +118,14 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_scala_checkers = []
 
-" javascript:
-" - highlight inline handlebars
-" - run neoformat on save
-autocmd BufRead,BufNewFile *.js HighlightInlineHbs
-autocmd BufWritePre *.js Neoformat
+" configure local prettier
+if filereadable('./node_modules/.bin/prettier')
+  let g:neoformat_javascript_prettier = {
+    \ 'exe': './node_modules/.bin/prettier',
+    \ 'args': ['--write', '--config .prettierrc.json'],
+    \ 'replace': 1
+    \ }
+endif
 
 " make fzf use the silver searcher
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
