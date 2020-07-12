@@ -28,6 +28,7 @@ Plug 'Jimeno0/vim-chito'
 Plug 'kaicataldo/material.vim'
 Plug 'victorze/foo'
 Plug 'jcherven/jummidark.vim'
+Plug 'kadekillary/Turtles'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'dustinfarris/vim-htmlbars-inline-syntax'
@@ -49,7 +50,7 @@ set background=dark
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme jummidark
+colorscheme turtles
 
 " make sure the background is transparent
 " hi! Normal ctermbg=NONE guibg=NONE
