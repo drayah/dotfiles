@@ -8,3 +8,4 @@
 
 (package! highlight-thing)
 (package! adoc-mode)
+(package! humanoid-themes)

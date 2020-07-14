@@ -9,7 +9,7 @@
 ;; personal helper functions
 (require 'extras "~/.doom.d/extras.el")
 
-(load-theme 'doom-one-light t)
+(setq doom-theme 'humanoid-light)
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
