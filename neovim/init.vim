@@ -128,11 +128,8 @@ if filereadable('./node_modules/.bin/prettier')
     \ }
 endif
 
-" make fzf use the silver searcher
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
 " map ctrl-p
-nnoremap <C-P> :FZF<Enter>
+nnoremap <C-P> :Rg<Enter>
 
 " insert mode map jk to esc
 imap jk <Esc>
