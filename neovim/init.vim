@@ -9,8 +9,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fireplace'
-Plug 'humorless/vim-kibit'
-Plug 'venantius/vim-eastwood'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-scripts/searchfold.vim'
 Plug 'luochen1990/rainbow'
@@ -36,7 +34,9 @@ Plug 'eraserhd/parinfer-rust'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'gcmt/taboo.vim'
 Plug 'RRethy/vim-illuminate'
-Plug 'sbdchd/neoformat'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
 
 syntax on
@@ -118,15 +118,6 @@ let g:rainbow_conf = {
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_scala_checkers = []
-
-" configure local prettier
-if filereadable('./node_modules/.bin/prettier')
-  let g:neoformat_javascript_prettier = {
-    \ 'exe': './node_modules/.bin/prettier',
-    \ 'args': ['--write', '--config .prettierrc.json'],
-    \ 'replace': 1
-    \ }
-endif
 
 " map ctrl-p
 nnoremap <C-P> :Rg<Enter>
