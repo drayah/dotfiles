@@ -73,10 +73,6 @@
       (for-all 'defun)
       (provided 0))))
 
-;; lsp
-(after! lsp-mode
-  (flycheck-add-next-checker 'lsp 'clj-kondo-clj))
-
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (setq parinfer-extensions '(defaults
                             smart-tab
