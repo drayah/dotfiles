@@ -13,6 +13,10 @@
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
+;; highlight
+(custom-set-faces!
+  '(highlight :background "#f7e9ad" :foreground "#897105"))
+
 ;; fonts
 (setq doom-font (font-spec :family "SFMono Nerd Font" :size 14)
       doom-big-font (font-spec :family "SFMono Nerd Font" :size 16))
