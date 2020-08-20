@@ -37,24 +37,6 @@
 (add-to-list 'auto-mode-alist '("\\.adoc\\'" . adoc-mode))
 (add-to-list 'auto-mode-alist '("\\.repl\\'" . clojure-mode))
 
-;; highlight-thing
-(add-hook 'prog-mode-hook 'highlight-thing-mode)
-
-;; highlight-thing colors (foreground background)
-(setq highlight-thing-colors
-  '(("#ca73d6" "#583d5b")   ;;vibrant
-    ("#a9d1cc" "#36635d")   ;;sourcerer
-    ("#897105" "#f7e9ad"))) ;;solarized
-
-(setq highlight-thing-active-color 2)
-
-(after! highlight-thing
-  (let* ((color (nth highlight-thing-active-color highlight-thing-colors))
-         (foreground (car color))
-         (background (car (last color))))
-    (set-face-attribute 'highlight-thing nil :foreground foreground)
-    (set-face-attribute 'highlight-thing nil :background background)))
-
 ;; clojure
 (use-package! clojure-mode
   :config
