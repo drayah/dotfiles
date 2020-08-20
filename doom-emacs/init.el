@@ -36,12 +36,13 @@
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        ;;hydra
        indent-guides     ; highlighted indent columns
+       ;;ligatures         ; ligatures and symbols to make your code pretty again
+       ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink the current line after jumping
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
-       ;;pretty-code       ; replace bits of code with pretty symbols
        ;;tabs              ; a tab bar for Emacs
        treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
@@ -95,23 +96,25 @@
        (lookup           ; helps you navigate your code and documentation
         +docsets)        ; ...or in Dash docsets locally
        lsp
-       macos               ; MacOS-specific commands
-       ;;make              ; run make tasks from Emacs
        magit               ; a git porcelain for Emacs
-       ;;password-store    ; password manager for nerds
+       ;;make              ; run make tasks from Emacs
+       ;;pass              ; password manager for nerds
        ;;pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
+       ;;taskrunner        ; taskrunner for all your projects
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
-       ;;wakatime
+
+       :os
+       (:if IS-MAC macos)  ; improve compatibility with macOS
+       ;;tty               ; improve the terminal Emacs experience
 
        :lang
        ;;agda              ; types of types of types of types...
-       ;;assembly          ; assembly for fun or debugging
-       ;;(cc +irony +rtags); C/C++/Obj-C madness
-       (clojure +lsp)             ; java with a lisp
+       ;;cc                ; C/C++/Obj-C madness
+       (clojure +lsp)    ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
@@ -149,24 +152,25 @@
        ;;python            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
+       ;;raku              ; the artist formerly known as perl6
        ;;rest              ; Emacs as a REST client
+       ;;rst               ; ReST in peace
        ;;ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        ;;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
+       ;;scheme            ; a fully conniving family of lisps
        (sh +fish)        ; she sells (ba|z|fi)sh shells on the C xor
+       ;;sml
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        web               ; the tubes
-       ;;yaml              ; JSON, but readable
+       yaml              ; JSON, but readable
 
        :email
-       ;;(mu4e +gmail)       ; WIP
-       ;;notmuch             ; WIP
-       ;;(wanderlust +gmail) ; WIP
+       ;;(mu4e +gmail)
+       ;;notmuch
+       ;;(wanderlust +gmail)
 
-       ;; Applications are complex and opinionated modules that transform Emacs
-       ;; toward a specific purpose. They may have additional dependencies and
-       ;; should be loaded late.
        :app
        ;;calendar
        ;;irc               ; how neckbeards socialize
@@ -174,11 +178,5 @@
        ;;twitter           ; twitter client https://twitter.com/vnought
 
        :config
-       ;; For literate config users. This will tangle+compile a config.org
-       ;; literate config in your `doom-private-dir' whenever it changes.
        ;;literate
-
-       ;; The default module sets reasonable defaults for Emacs. It also
-       ;; provides a Spacemacs-inspired keybinding scheme and a smartparens
-       ;; config. Use it as a reference for your own modules.
        (default +bindings +smartparens))
