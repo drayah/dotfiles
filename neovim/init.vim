@@ -50,7 +50,7 @@ set background=dark
 set backspace=indent,eol,start
 
 " enable colorscheme in terminal
-colorscheme jummidark
+colorscheme hyper
 
 " make sure the background is transparent
 " hi! Normal ctermbg=NONE guibg=NONE

@@ -25,9 +25,6 @@
 (setq-default evil-shift-width 2
               tab-width 2)
 
-;; relative line numbers
-(setq display-line-numbers-type 'relative)
-
 ;; don't confirm on exit
 (setq confirm-kill-emacs nil)
 
