@@ -7,4 +7,4 @@
 ;; (package! builtin-package :disable t)
 
 (package! adoc-mode)
-(package! humanoid-themes)
+(package! humanoid-themes :recipe (:local-repo "local/emacs-humanoid-themes"))
