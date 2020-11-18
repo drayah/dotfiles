@@ -37,6 +37,7 @@
 ;; add modes for other extensions
 (add-to-list 'auto-mode-alist '("\\.adoc\\'" . adoc-mode))
 (add-to-list 'auto-mode-alist '("\\.repl\\'" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.json.base\\'" . javascript-mode))
 
 ;; clojure
 (use-package! clojure-mode
