@@ -10,6 +10,7 @@
 (require 'extras "~/.doom.d/extras.el")
 
 (setq doom-theme 'humanoid-light)
+(setq evil-normal-state-cursor '(box "#bf36bb"))
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
 
