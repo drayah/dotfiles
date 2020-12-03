@@ -68,6 +68,18 @@
 ;; cider
 (setq cider-show-error-buffer nil)
 
+;; lsp
+(setq ignore-lsp-dirs '("[/\\\\]\\.circleci\\'"
+                        "[/\\\\]\\.clj-kondo\\'"
+                        "[/\\\\]\\.github\\'"
+                        "[/\\\\]\\.lsp\\'"
+                        "[/\\\\]target\\"
+                        "[/\\\\]visual-flow\\"))
+
+(after! lsp-mode
+  (setq lsp-file-watch-ignored (append lsp-file-watch-ignored
+                                       ignore-lsp-dirs)))
+
 ;; web
 (after! web-mode
   (setq web-mode-markup-indent-offset 2)
