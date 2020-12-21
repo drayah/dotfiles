@@ -68,6 +68,9 @@
 ;; cider
 (setq cider-show-error-buffer nil)
 
+(after! cider
+  (set-popup-rule! "^\\*cider-repl" :side 'right :width 0.5))
+
 ;; lsp
 (setq ignore-lsp-dirs '("[/\\\\]\\.circleci\\'"
                         "[/\\\\]\\.clj-kondo\\'"
