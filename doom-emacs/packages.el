@@ -7,4 +7,6 @@
 ;; (package! builtin-package :disable t)
 
 (package! adoc-mode)
+(package! parsec)
+(package! docopt)
 (package! humanoid-themes :recipe (:local-repo "local/emacs-humanoid-themes"))
