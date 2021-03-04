@@ -65,6 +65,11 @@
                             pretty-parens
                             evil))
 
+;; paredit keybindings
+(global-set-key (kbd "C-)") 'paredit-forward-slurp-sexp)
+(global-set-key (kbd "C-(") 'paredit-backward-slurp-sexp)
+(global-set-key (kbd "M-r") 'raise-sexp)
+
 ;; cider
 (setq cider-show-error-buffer nil)
 
